@@ -7,6 +7,13 @@ Si el porcentaje es mayor a 100 o menor que 0, debe retornar "Porcentaje no vál
 */
 function calcularDescuento(precio, porcentaje) {
     // TODO: Resolver
+    if (porcentaje < 0 || porcentaje > 100){
+        return "Porcentaje no valido"
+     }
+    const descuento = (precio * porcentaje) / 100
+    const total = precio - descuento
+    return total
+ 
 }
 
 console.log("-----------------------------------")
