@@ -8,6 +8,15 @@ Si cumple con ambas, retornar "Contraseña válida", de lo contrario "Contraseñ
 */
 function validarContrasena(contrasena) {
     // TODO: Resolver
+    if (contrasena.length < 8){
+        return "Contraseña no valida"
+    }
+    const numero = /\d/.test(contrasena);
+    if (numero){
+        return "Contraseña valida"
+    } else {
+        return "Contraseña no valida"
+    }
 }
 
 console.log("-----------------------------------")
