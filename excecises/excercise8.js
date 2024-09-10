@@ -12,6 +12,16 @@ Además, debe clasificar el IMC:
 */
 function calcularIMC(peso, altura) {
     // TODO: Resolver
+    const IMC = peso / (altura * altura)
+    if (IMC < 18.5){
+        return "Bajo peso"
+    } else if (IMC >= 18.5 && IMC < 24.9){
+        return "Normal"
+    } else if (IMC >= 25 && IMC < 29.9){
+        return "Sobrepeso"
+    } else if (IMC >= 30){
+        return "Obesidad"
+    }
 }
 
 console.log("-----------------------------------")
